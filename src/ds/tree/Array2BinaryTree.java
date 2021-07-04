@@ -1,7 +1,4 @@
-package com.test;
-
-import com.test.bst.BSTUtils;
-import com.test.bst.Node;
+package ds.tree;
 
 public class Array2BinaryTree {
 	public static void main(String[] args) {

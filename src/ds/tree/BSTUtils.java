@@ -1,4 +1,4 @@
-package com.test.bst;
+package ds.tree;
 
 public class BSTUtils {
 	public static void printTree(Node node) {

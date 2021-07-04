@@ -1,4 +1,4 @@
-package com.test;
+package ds.stackqueue;
 
 import java.util.Stack;
 

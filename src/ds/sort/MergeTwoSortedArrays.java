@@ -1,4 +1,4 @@
-package com.test.sort;
+package ds.sort;
 
 public class MergeTwoSortedArrays {
 
@@ -44,7 +44,7 @@ public class MergeTwoSortedArrays {
 	private static void merge(int[] arr2, int arr2Index, int last) {
 		// pull all the elements in arr2 (between the first index and swap index) by 1 index
 		for (int i = arr2Index + 1; i < arr2.length; i++) {
-			int curr = arr2[i];
+
 			if (arr2[i] > last) {
 				// last has been merged so exit the loop
 				arr2[i - 1] = last;

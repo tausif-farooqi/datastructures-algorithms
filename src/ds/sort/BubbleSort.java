@@ -1,4 +1,4 @@
-package com.test.sort;
+package ds.sort;
 
 public class BubbleSort {
 

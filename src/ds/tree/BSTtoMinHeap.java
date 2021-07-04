@@ -1,4 +1,4 @@
-package com.test.bst;
+package ds.tree;
 
 import java.util.LinkedList;
 import java.util.Queue;

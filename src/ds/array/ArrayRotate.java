@@ -1,4 +1,4 @@
-package com.test;
+package ds.array;
 
 public class ArrayRotate {
 

@@ -1,4 +1,4 @@
-package com.test.bst;
+package ds.tree;
 
 public class BSTDifferenceBetweenOddEvenLevels {
 

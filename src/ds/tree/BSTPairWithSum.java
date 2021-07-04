@@ -1,4 +1,4 @@
-package com.test.bst;
+package ds.tree;
 
 import java.util.ArrayList;
 import java.util.List;

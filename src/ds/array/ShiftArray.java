@@ -1,4 +1,4 @@
-package com.test.sort;
+package ds.array;
 
 public class ShiftArray {
 
