@@ -2,6 +2,7 @@ package ds.tree;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 public class BinaryTreeTraversal {
 	private static List<Integer> visited = new ArrayList<>();
@@ -25,6 +26,10 @@ public class BinaryTreeTraversal {
 		System.out.println("\nBreadth first");
 		System.out.println("--------");
 		breadthFirst(tree);
+		
+		System.out.println("\nIn order, non-recursive");
+		System.out.println("--------");
+		inOrderNonRecursive(tree);		
 	}
 	
 	private static void inorder(Node node) {
@@ -82,6 +87,27 @@ public class BinaryTreeTraversal {
 		
 		breadthFirst(node.getLeft());
 		breadthFirst(node.getRight());
+	}
+	
+	private static void inOrderNonRecursive(Node node) {
+		if (node == null) {
+			return;
+		}
+		
+		Node current = node;
+		Stack<Node> stack = new Stack<Node>();
+		
+		while (current != null || !stack.isEmpty()) {
+			while (current != null) {
+				stack.push(current);
+				current = current.getLeft();
+			}
+			
+			current = stack.pop();
+			System.out.println(current.getValue());
+			
+			current = current.getRight();
+		}
 	}
 	
 	private static Node buildTree() {

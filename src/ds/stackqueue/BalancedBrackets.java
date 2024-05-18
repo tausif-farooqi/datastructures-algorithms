@@ -20,6 +20,6 @@ public class BalancedBrackets {
 			}
 		}
 
-		System.out.println("Balanced: " + balanced);
+		System.out.println("Balanced: " + (balanced == 0));
 	}
 }

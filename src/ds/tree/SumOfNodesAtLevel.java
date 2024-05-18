@@ -8,7 +8,7 @@ public class SumOfNodesAtLevel {
 		Node tree = buildTree();
 		BSTUtils.printTree(tree);
 		List<Integer> list = new ArrayList<>();
-		traverse(tree, list, 1, 4);
+		traverse(tree, list, 1, 3);
 		System.out.println(list);
 	}
 	
