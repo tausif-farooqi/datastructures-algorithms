@@ -3,6 +3,9 @@ package ds.tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * Convert the BST to a linked list using in-order traversal. Then we re-populate the tree using pre-order traversal.
+ */
 public class BSTtoMinHeap {
 	private Queue<Integer> inOrder;
 	private Node root;
@@ -14,15 +17,13 @@ public class BSTtoMinHeap {
 	}
 	
 	private void populateInOrderList(Node node) {
-		if (node.getLeft() != null) {
-			populateInOrderList(node.getLeft());
+		if (node == null) {
+			return;
 		}
-
-		inOrder.add(node.getValue());
 		
-		if (node.getRight() != null) {
-			populateInOrderList(node.getRight());
-		}
+		populateInOrderList(node.getLeft());
+		inOrder.add(node.getValue());
+		populateInOrderList(node.getRight());
 	}
 	
 	public void convertMinHeap() {

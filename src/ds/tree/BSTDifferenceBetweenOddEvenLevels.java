@@ -28,13 +28,8 @@ public class BSTDifferenceBetweenOddEvenLevels {
 				
 		int nextLevel = level + 1;
 		
-		if (node.getLeft() != null) {
-			sumOddEven(node.getLeft(), nextLevel, oddEvenSum);
-		}
-		
-		if (node.getRight() != null) {
-			sumOddEven(node.getRight(), nextLevel, oddEvenSum);
-		}
+		sumOddEven(node.getLeft(), nextLevel, oddEvenSum);
+		sumOddEven(node.getRight(), nextLevel, oddEvenSum);
 	}
 	
 	private static Node buildTree() {
